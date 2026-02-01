@@ -104,20 +104,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } catch (err) { /* ignore */ }
 
-    if (avatarBtn && avatarInput && heroImg) {
-        avatarBtn.addEventListener('click', () => avatarInput.click());
-        avatarInput.addEventListener('change', (e) => {
-            const file = (e.target.files && e.target.files[0]) || null;
-            if (!file) return;
-            if (!file.type.startsWith('image/')) return;
-            const reader = new FileReader();
-            reader.onload = () => {
-                const dataUrl = reader.result;
-                heroImg.src = dataUrl;
-                heroImg.style.display = 'block';
-                if (avatarFallback) avatarFallback.style.display = 'none';
-                try { localStorage.setItem('profileAvatarDataUrl', dataUrl); } catch (err) { /* ignore */ }
-            };
+    // if (avatarBtn && avatarInput && heroImg) {
+    //     avatarBtn.addEventListener('click', () => avatarInput.click());
+    //     avatarInput.addEventListener('change', (e) => {
+    //         const file = (e.target.files && e.target.files[0]) || null;
+    //         if (!file) return;
+    //         if (!file.type.startsWith('image/')) return;
+    //         const reader = new FileReader();
+    //         reader.onload = () => {
+    //             const dataUrl = reader.result;
+    //             heroImg.src = dataUrl;
+    //             heroImg.style.display = 'block';
+    //             if (avatarFallback) avatarFallback.style.display = 'none';
+    //             try { localStorage.setItem('profileAvatarDataUrl', dataUrl); } catch (err) { /* ignore */ }
+    //         };
             reader.readAsDataURL(file);
         });
     }
