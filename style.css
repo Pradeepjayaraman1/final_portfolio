@@ -331,7 +331,7 @@
         margin-bottom: 18px;
     }
     .hero-buttons {
-        margin-bottom: 18px;
+        /* margin-bottom: 18px; */
     }
     .hero-tech {
         margin-bottom: 0;
@@ -358,8 +358,8 @@
             height: 180px;
         }
         .hero-photo {
-            width: 160px;
-            height: 160px;
+            width: 180px;
+            height: 180px;
         }
         .hero-flex {
             gap: 16px;
