@@ -266,8 +266,8 @@
             max-width: 260px;
         }
          .hero-avatar {
-            /* width: 230px;
-            height: 230px;  */
+            width: 230px;
+            height: 230px;  
         }
     }
     @media (max-width: 900px) {
@@ -331,7 +331,7 @@
         margin-bottom: 18px;
     }
     .hero-buttons {
-        /* margin-bottom: 18px; */
+        margin-bottom: 18px;
     }
     .hero-tech {
         margin-bottom: 0;
